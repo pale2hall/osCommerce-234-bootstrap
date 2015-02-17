@@ -180,12 +180,8 @@
   <div class="contentText row">
     <div class="col-sm-8">
       <div class="alert alert-warning">
+        <?php echo tep_draw_button(IMAGE_BUTTON_CHANGE_ADDRESS, 'glyphicon glyphicon-home', tep_href_link(FILENAME_CHECKOUT_SHIPPING_ADDRESS, '', 'SSL'), NULL, NULL, 'btn-default pull-right'); ?>
         <?php echo TEXT_CHOOSE_SHIPPING_DESTINATION; ?>
-        <div class="clearfix"></div>
-        <div class="pull-right">
-          <?php echo tep_draw_button(IMAGE_BUTTON_CHANGE_ADDRESS, 'glyphicon glyphicon-home', tep_href_link(FILENAME_CHECKOUT_SHIPPING_ADDRESS, '', 'SSL')); ?>
-        </div>
-        <div class="clearfix"></div>
       </div>
     </div>
     <div class="col-sm-4">

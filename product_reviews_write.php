@@ -150,25 +150,28 @@ function checkForm() {
         ?>
       </div>
     </div>
-    <div class="form-group">
-      <label class="control-label col-sm-3"><?php echo SUB_TITLE_RATING; ?></label>
-      <div class="col-sm-9">
-        <label class="radio-inline">
-          <?php echo tep_draw_radio_field('rating', '1'); ?>
-        </label>
-        <label class="radio-inline">
-          <?php echo tep_draw_radio_field('rating', '2'); ?>
-        </label>
-        <label class="radio-inline">
-          <?php echo tep_draw_radio_field('rating', '3'); ?>
-        </label>
-        <label class="radio-inline">
-          <?php echo tep_draw_radio_field('rating', '4'); ?>
-        </label>
-        <label class="radio-inline">
-          <?php echo tep_draw_radio_field('rating', '5', 1); ?>
-        </label>
-        <?php echo '<div class="help-block justify" style="width: 150px;">' . TEXT_BAD . '<p class="pull-right">' . TEXT_GOOD . '</p></div>'; ?>
+    <div class="form-group text-center">
+      <label class="control-label col-xs-2 col-sm-3"><?php echo SUB_TITLE_RATING; ?></label>
+      <div class="inputRequirement col-xs-2 col-sm-2 text-right">
+        <?php echo TEXT_BAD; ?>
+      </div>
+      <div class="col-xs-1 col-sm-1">
+        <?php echo tep_draw_radio_field('rating', '1'); ?>
+      </div>
+      <div class="col-xs-1">
+        <?php echo tep_draw_radio_field('rating', '2'); ?>
+      </div>
+      <div class="col-xs-1">
+        <?php echo tep_draw_radio_field('rating', '3'); ?>
+      </div>
+      <div class="col-xs-1">
+        <?php echo tep_draw_radio_field('rating', '4'); ?>
+      </div>
+      <div class="col-xs-1">
+        <?php echo tep_draw_radio_field('rating', '5'); ?>
+      </div>
+      <div class="inputRequirement col-xs-2 col-sm-2 text-left">
+        <?php echo TEXT_GOOD; ?>
       </div>
     </div>
 

@@ -115,12 +115,8 @@
   <div class="contentText row">
     <div class="col-sm-8">
       <div class="alert alert-warning">
-        <?php echo TEXT_SELECTED_BILLING_DESTINATION; ?>
-        <div class="clearfix"></div>
-        <div class="pull-right">
-          <?php echo tep_draw_button(IMAGE_BUTTON_CHANGE_ADDRESS, 'glyphicon glyphicon-home', tep_href_link(FILENAME_CHECKOUT_PAYMENT_ADDRESS, '', 'SSL')); ?>
-        </div>
-        <div class="clearfix"></div>
+        <?php echo tep_draw_button(IMAGE_BUTTON_CHANGE_ADDRESS, 'glyphicon glyphicon-home', tep_href_link(FILENAME_CHECKOUT_PAYMENT_ADDRESS, '', 'SSL'), NULL, NULL, 'btn-default pull-right'); ?>
+        <p><?php echo TEXT_SELECTED_BILLING_DESTINATION; ?></p>
       </div>
     </div>
     <div class="col-sm-4">
